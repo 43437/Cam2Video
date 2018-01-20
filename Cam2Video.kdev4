@@ -1,0 +1,4 @@
+[Project]
+Name=Cam2Video
+Manager=KDevCMakeManager
+VersionControl=kdevgit
