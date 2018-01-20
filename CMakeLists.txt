@@ -3,4 +3,8 @@ project(cam2video)
 
 add_executable(cam2video main.cpp)
 
-install(TARGETS cam2video RUNTIME DESTINATION bin)
+set(CMAKE_CXX_FLAGS "-std=c++11")
+
+target_link_libraries(cam2video avutil avcodec avformat swscale avdevice pthread)
+
+#install(TARGETS cam2video RUNTIME DESTINATION bin)
